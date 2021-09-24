@@ -1,11 +1,11 @@
 test:
-	cabal v2-test
+	stack test --allow-different-user
 
 bin:
-	cabal v2-build
+	stack build --allow-different-user
 
 clean:
-	cabal v2-clean
+	stack clean --allow-different-user
 
 upstream:
 	git remote add upstream https://github.com/ucsd-cse130/00-lambda.git
