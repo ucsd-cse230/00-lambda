@@ -1,15 +1,4 @@
 # Assignment 0: Lambda Calculus (140 points)
-
-## To run on the ieng6 lab machines
-
-1. Set the correct `Makefile`
-
-```sh
-$ cp Makefile.cab Makefile
-```
-
-2. Edit
-
 ## Overview : Lambda Calculus
 
 The objective of this assignment is for you to understand
@@ -25,35 +14,25 @@ The assignment is in the files:
 You can edit these files and then run them,
 
 * either through the [web interface](https://goto.ucsd.edu/elsa/index.html), OR
-* by running `$ elsa path/to/file.lc` on `ieng6.ucsd.edu`, OR
+* by running `elsa path/to/file.lc` on the provided virtual machine, OR
 * by locally installing `elsa` following [these instructions](https://github.com/ucsd-progsys/elsa#install)
 
 If you run it online, be sure to **copy back the result** to the corresponding local file before submitting.
 
-## Running Elsa 
-
-In the lab `ieng6` You can run `elsa` on a single file `path/to/file.lc` with:
-
-```
-exec_elsa path/to/file.lc 
-```
-
 ## Assignment Testing and Evaluation
-
-Your functions/programs **must** compile and run on `ieng6.ucsd.edu`.
 
 All the points will be awarded automatically, by
 **evaluating your functions against a given test suite**.
 
 When you run
 
-```shell
+```shellsession
 $ make
 ```
 
 or
 
-```shell
+```shellsession
 $ stack test
 ```
 
@@ -81,15 +60,9 @@ but you will not be graded on this.
 
 To submit your code, just do:
 
-```bash
+```shellsession
 $ make turnin
 ```
-
-`turnin` will provide you with a confirmation of the
-submission process; make sure that the size of the file
-indicated by `turnin` matches the size of your file.
-See the ACS Web page on [turnin](https://acms.ucsd.edu/info/turnin.html)
-for more information on the operation of the program.
 
 **REMARK**: For problems 1 and 2, when using `=d>`, you don't need to unfold
 every definition. It is often easier to keep some definitions folded until
