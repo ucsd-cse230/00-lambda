@@ -64,6 +64,11 @@ To submit your code, just do:
 $ make turnin
 ```
 
+If you are working on this assignment **with a partner**,
+please put both your and your partner's GihHub handles into the file `COLLABORATORS.md`
+in the root of the repository (each on a separate line).
+If you are working alone, you can leave this file empty.
+
 **REMARK**: For problems 1 and 2, when using `=d>`, you don't need to unfold
 every definition. It is often easier to keep some definitions folded until
 their code is needed.

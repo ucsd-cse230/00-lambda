@@ -1,11 +1,11 @@
 test:
-	stack test --allow-different-user
+	stack test
 
 bin:
-	stack build --allow-different-user
+	stack build
 
 clean:
-	stack clean --allow-different-user
+	stack clean
 
 upstream:
 	git remote add upstream https://github.com/ucsd-cse130/00-lambda.git
