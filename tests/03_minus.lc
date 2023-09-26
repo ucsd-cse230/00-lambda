@@ -17,6 +17,8 @@ let ZERO  = \f x -> x
 let ONE   = \f x -> f x
 let TWO   = \f x -> f (f x)
 let INC   = \n f x -> f (n f x)
+let ADD   = \n m -> n INC m
+let MUL   = \n m -> n (ADD m) ZERO
 
 --------------------------------------------------------------------------------
 -- Pairs
@@ -93,7 +95,7 @@ eval sub_two_two :
   SUB TWO TWO
   =~> ZERO
 
-eval sub_two_three :
+eval sub_one_two :
   SUB ONE TWO
   =~> ZERO
 

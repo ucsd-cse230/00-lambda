@@ -5,6 +5,7 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 
 import Data.IORef
+import Test.Tasty
 import Test.Tasty.HUnit
 import System.Exit
 import Control.Exception
@@ -37,10 +38,10 @@ unit1 sc = testGroup "Unit 1"
       "bool: or_false_true"
   , mkTest
       (check "02_plus.lc")
-      "suc_one"
+      "inc_one"
       True
       10
-      "add: suc_one"
+      "add: inc_one"
   , mkTest
       (check "02_plus.lc")
       "add_zero_zero"
@@ -63,13 +64,13 @@ unit1 sc = testGroup "Unit 1"
       (check "03_minus.lc")
       "skip1_true_zero"
       True
-      10
+      5
       "skip1_true_zero"
   , mkTest
       (check "03_minus.lc")
       "skip1_true_one"
       True
-      10
+      5
       "skip1_true_one"
   , mkTest
       (check "03_minus.lc")
@@ -110,10 +111,10 @@ unit1 sc = testGroup "Unit 1"
       "sub_two_two"
   , mkTest
       (check "03_minus.lc")
-      "sub_two_three"
+      "sub_one_two"
       True
       5
-      "sub_two_three"
+      "sub_one_two"
   , mkTest
       (check "03_minus.lc")
       "isz_zero"

@@ -16,7 +16,7 @@ let MUL   = \n m -> n (ADD m) ZERO
 -------------------------------------------------------------------------------
 -- YOU SHOULD ONLY MODIFY THE TEXT BELOW, JUST THE PARTS MARKED AS COMMENTS
 -------------------------------------------------------------------------------
-eval suc_one :
+eval inc_one :
   INC ONE
   -- (a) fill in your reductions here
   =d> TWO

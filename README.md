@@ -1,4 +1,4 @@
-# Assignment 0: Lambda Calculus (140 points)
+# Assignment 0: Lambda Calculus (130 public + 150 private points)
 ## Overview : Lambda Calculus
 
 The objective of this assignment is for you to understand
@@ -13,11 +13,16 @@ The assignment is in the files:
 
 You can edit these files and then run them,
 
-* either through the [web interface](https://goto.ucsd.edu/elsa/index.html), OR
-* by running `elsa path/to/file.lc` on the provided virtual machine, OR
+* either through the [web interface](https://elsa.goto.ucsd.edu/index.html), OR
+* by running `$ elsa path/to/file.lc` (e.g. `elsa tests/01_bool.lc`) on `codespaces`, OR
 * by locally installing `elsa` following [these instructions](https://github.com/ucsd-progsys/elsa#install)
 
-If you run it online, be sure to **copy back the result** to the corresponding local file before submitting.
+You can access Codespaces by clicking "Code" in the top right of the repo, clicking Codespaces, and creating a Codespace.
+
+If you work on your code in the web interface, be sure to **copy back the result**
+into the corresponding source file locally or on `codespaces`.
+Whether you are working locally or on `codespaces`,
+do not forget to commit and push all your changes to your GitHub repo.
 
 ## Assignment Testing and Evaluation
 
@@ -62,6 +67,14 @@ To submit your code, just do:
 
 ```shellsession
 $ make turnin
+```
+
+If you are comfortable with command line `git` you can run these commands separately
+to commit and push your work:
+
+```shellsession
+$ git commit -a -m "turnin"
+$ git push origin master
 ```
 
 If you are working on this assignment **with a partner**,
@@ -111,17 +124,17 @@ will get 0 points for the assignment.
 last line.
 
 
-### Part (a) (5 points)
+### Part (a) (10 points)
 
 Complete the sequence of `=a>`, `=b>` and `=d>`
 steps needed to reduce `INC ONE` to `TWO`.
 
-### Part (b) (5 points)
+### Part (b) (10 points)
 
 Complete the sequence of `=a>`, `=b>` and `=d>`
 steps needed to reduce `ADD ZERO ZERO` to `ZERO`.
 
-### Part (c) (5 points)
+### Part (c) (10 points)
 
 Complete the sequence of `=a>`, `=b>` and `=d>`
 steps needed to reduce `ADD TWO TWO` to `FOUR`.
@@ -133,7 +146,7 @@ definitions for `SKIP1`, `DEC`, `SUB`, `ISZ` and `EQL`.
 If you modify **any other** other part of the file
 you will get 0 points for the assignment.
 
-### Part (a) (30 points)
+### Part (a) (20 points)
 
 Replace the definition of `SKIP1` with a suitable
 lambda-term (i.e. replace `TODO` with a suitable
@@ -153,7 +166,11 @@ eval skip1_true_one :
   =~> (\b -> b TRUE TWO)          -- PAIR TRUE TWO
 ```
 
-### Part (b) (30 points)
+`SKIP1` is a helper function used in part (b) below.
+You are supposed to infer the intended meaning of `SKIP1`
+from the examples above.
+
+### Part (b) (15 points)
 
 Replace the definition of `DEC` (decrement-by-one)
 with a suitable lambda-term (i.e. replace `TODO`
@@ -174,7 +191,9 @@ eval decr_two :
   =~> ONE
 ```
 
-### Part (c) (10 points)
+You **must** use `SKIP1` in your definition of `DEC`.
+
+### Part (c) (20 points)
 
 Replace the definition of `SUB` (subtract) with a
 suitable lambda-term (i.e. replace `TODO`
@@ -199,7 +218,7 @@ eval sub_two_three :
   =~> ZERO
 ```
 
-### Part (d) (20 points)
+### Part (d) (10 points)
 
 Replace the definition of `ISZ` (is-equal-to-zero)
 with a suitable lambda-term (i.e. replace `TODO`
